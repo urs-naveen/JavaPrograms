@@ -1,17 +1,14 @@
 import java.awt.*;
+import java.util.Random;
 
 public class MouseMovement {
-
     public static void main(String[] args) throws AWTException {
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Robot bot = new Robot();
+        Random random = new Random();
 
         while (true) {
-            int screenWidth = (int) screenSize.getWidth();
-            int screenHeight = (int) screenSize.getHeight();
-
-            bot.delay(60000);
-            bot.mouseMove(screenWidth, screenHeight);
+            bot.delay(10000);
+            bot.mouseMove(random.nextInt() % 640, random.nextInt() % 480);
         }
     }
 }
