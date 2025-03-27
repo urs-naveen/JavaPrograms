@@ -21,7 +21,7 @@ public class GroupAnagrams {
 
         for (String s : map.keySet()) {
             List<String> values = map.get(s);
-            if (values.size() >= 1) {
+            if (!values.isEmpty()) {
                 System.out.print(values);
             }
         }
