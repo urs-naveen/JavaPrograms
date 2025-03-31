@@ -7,7 +7,7 @@ public class MouseMovement {
         Random random = new Random();
 
         while (true) {
-            bot.delay(10000);
+            bot.delay(60000);
             bot.mouseMove(random.nextInt() % 640, random.nextInt() % 480);
         }
     }
