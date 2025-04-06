@@ -5,9 +5,10 @@ public class ArraySum {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        Scanner strInput = new Scanner(System.in);
         int n = input.nextInt();
 
-        String str = input.next();
+        String str = strInput.nextLine();
         String[] arr = str.split(" ");
 
         long result = IntStream.range(0, n).mapToLong(i -> Integer.parseInt(arr[i])).sum();
